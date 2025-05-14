@@ -127,8 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="001.cpp" />
-    <ClCompile Include="002.cpp" />
+    <ClCompile Include="001_MinStack.cpp" />
+    <ClCompile Include="002_2Stack1Queue.cpp" />
+    <ClCompile Include="003_ReverseStackByRecursion.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

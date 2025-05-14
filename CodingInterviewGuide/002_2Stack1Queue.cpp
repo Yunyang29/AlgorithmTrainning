@@ -7,7 +7,9 @@
 
 #include <stack>
 #include <stdexcept>
-class MyQueue {
+#include <iostream>
+
+class _002 {
 private:
 	std::stack<int> stack_main;
 	std::stack<int> stack_aid;
@@ -17,9 +19,6 @@ private:
 			dst.push(src.top());
 			src.pop();
 		}
-	}
-public:
-	MyQueue() {
 	}
 
 	void push(int x) {
@@ -57,5 +56,23 @@ public:
 
 	bool empty() {
 		return stack_main.empty() && stack_aid.empty();
+	}
+public:
+	_002() {
+	}
+	void test()
+	{
+		push(1);
+		push(2);
+		push(3);
+		push(4);
+		push(5);
+		std::cout << pop() << std::endl; // 1
+		std::cout << peek() << std::endl; // 2
+		std::cout << pop() << std::endl; // 2
+		std::cout << pop() << std::endl; // 3
+		std::cout << pop() << std::endl; // 4
+		std::cout << pop() << std::endl; // 5
+		std::cout << empty() << std::endl; // true
 	}
 };

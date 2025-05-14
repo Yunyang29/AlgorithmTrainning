@@ -9,24 +9,20 @@
 
 #include <stack>
 #include <stdexcept>
-class MinStack {
+#include <iostream>
+
+class _001 {
 private:
 	struct Node {
 		int data;
 		Node* under;
 		Node(int val) : data(val), under(nullptr) {} // 构造函数
 	};
-
 	Node* topNode; // 栈顶指针
 	int capacity;
 	int count;
-	std::stack<int> stackData;
-public:
-	MinStack() {
-		topNode = nullptr;
-		capacity = 1000;
-		count = 0;
-	}
+
+	std::stack<int> stackData; // 辅助栈
 
 	void push(int x) {
 		if (count == capacity)
@@ -89,5 +85,24 @@ public:
 			throw std::runtime_error("Stack is empty");
 		}
 		return stackData.top();
+	}
+public:
+	_001() {
+		topNode = nullptr;
+		capacity = 1000;
+		count = 0;
+	}
+
+	void test() {
+		push(3);
+		push(5);
+		push(2);
+		push(1);
+		push(4);
+		std::cout << "栈顶元素: " << top() << std::endl; // 4
+		std::cout << "最小元素: " << getMin() << std::endl; // 1
+		pop();
+		std::cout << "栈顶元素: " << top() << std::endl; // 1
+		std::cout << "最小元素: " << getMin() << std::endl; // 1
 	}
 };
