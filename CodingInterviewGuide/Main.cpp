@@ -1,11 +1,12 @@
 #include <iostream>
-#include "001_MinStack.cpp"
-#include "003_ReverseStackByRecursion.cpp"
+#include "005_StackSort.cpp"
 
 int main()
 {
-	_003 test;
+	_005 test;
 	test.test();
+
+	std::cout << " " << std::endl;
 	system("pause");
 	return 0;
 }

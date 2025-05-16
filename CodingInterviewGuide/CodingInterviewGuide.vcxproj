@@ -130,7 +130,10 @@
     <ClCompile Include="001_MinStack.cpp" />
     <ClCompile Include="002_2Stack1Queue.cpp" />
     <ClCompile Include="003_ReverseStackByRecursion.cpp" />
+    <ClCompile Include="004_CatAndDog.cpp" />
+    <ClCompile Include="005_StackSort.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Tool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
