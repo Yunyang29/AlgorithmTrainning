@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -132,6 +132,7 @@
     <ClCompile Include="003_ReverseStackByRecursion.cpp" />
     <ClCompile Include="004_CatAndDog.cpp" />
     <ClCompile Include="005_StackSort.cpp" />
+    <ClCompile Include="007_MaxWindow.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Tool.cpp" />
   </ItemGroup>

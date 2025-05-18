@@ -1,12 +1,11 @@
 #include <iostream>
-#include "005_StackSort.cpp"
+#include "007_MaxWindow.cpp"
 
 int main()
 {
-	_005 test;
+	_007 test;
 	test.test();
 
-	std::cout << " " << std::endl;
 	system("pause");
 	return 0;
 }

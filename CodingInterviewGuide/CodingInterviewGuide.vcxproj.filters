@@ -39,5 +39,8 @@
     <ClCompile Include="Tool.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="007_MaxWindow.cpp">
+      <Filter>源文件\Stack and Queues</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
