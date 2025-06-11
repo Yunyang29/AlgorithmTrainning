@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{68a80232-b04f-4189-9497-56330b340b65}</ProjectGuid>
-    <RootNamespace>CodingInterviewGuide</RootNamespace>
+    <ProjectGuid>{997ab4de-fc67-4f85-b129-85241ab78e0b}</ProjectGuid>
+    <RootNamespace>Algorithms</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,14 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="001_MinStack.cpp" />
-    <ClCompile Include="002_2Stack1Queue.cpp" />
-    <ClCompile Include="003_ReverseStackByRecursion.cpp" />
-    <ClCompile Include="004_CatAndDog.cpp" />
-    <ClCompile Include="005_StackSort.cpp" />
-    <ClCompile Include="007_MaxWindow.cpp" />
+    <ClCompile Include="160.IntersectionofTwoLinkedLists.cpp" />
+    <ClCompile Include="24.SwapNodesInPairs.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="59.SpiralMatrixII.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="General.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
