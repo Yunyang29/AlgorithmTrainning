@@ -1,3 +1,4 @@
+// ¡Ì Date: 25/06/11
 // ¡Ì Leetcode 160 https://leetcode.cn/problems/intersection-of-two-linked-lists/description/
 //
 // ¡Ì Keywords: Intersection of Two Linked Lists, Linked List, Two Pointers
