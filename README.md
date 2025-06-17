@@ -13,10 +13,10 @@
 
 | 类型                  | 已完成 |
 | ------------------- | --- |
-| 数组 Array            | 0  | 
-| 链表 Linked List      | 0  |
-| 栈 / 队列 Stack/Queue  | 0  | 
-| 哈希 Hash Table       | 0  |
+| 数组 Array            | 8  | 
+| 链表 Linked List      | 5  |
+| 栈 / 队列 Stack/Queue  | 5  | 
+| 哈希 Hash Table       | 1  |
 | 动态规划 DP             | 0   |
 | 深度 / 广度优先搜索 DFS/BFS | 0  |
 | 贪心 Greedy           | 0   |
