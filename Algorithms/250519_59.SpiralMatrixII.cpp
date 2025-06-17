@@ -13,7 +13,7 @@ using namespace std;
 
 class Solution {
 public:
-	vector<vector<int>> getMatrix(int n)
+	vector<vector<int>> main(int n)
 	{
 		vector<vector<int>> res(n, vector<int>(n, 0));
 		int startX, startY = 0;
@@ -62,7 +62,7 @@ public:
 	void test()
 	{
 		int n = 3; // Example size of the matrix
-		vector<vector<int>> res = getMatrix(n);
+		vector<vector<int>> res = main(n);
 		for (const auto& row : res) {
 			for (int val : row) {
 				printf("%d ", val);

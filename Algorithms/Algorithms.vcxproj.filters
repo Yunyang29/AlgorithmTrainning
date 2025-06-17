@@ -2,25 +2,43 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="1_Array">
+      <UniqueIdentifier>{f44e4a41-c01c-421f-ae16-434ee5ee0638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5_Queue&amp;Stack">
       <UniqueIdentifier>{5ebf9ce5-d511-4099-891b-d0e50ea3cbb0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2_Stack">
+    <Filter Include="2_LinkedList">
       <UniqueIdentifier>{71b6b4ec-56f5-410f-b721-b5761e66a96c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="59.SpiralMatrixII.cpp">
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="250610_24.SwapNodesInPairs.cpp">
+      <Filter>2_LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="250611_160.IntersectionofTwoLinkedLists.cpp">
+      <Filter>2_LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="250616_142.LinkedListCycleII.cpp">
+      <Filter>2_LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="250519_59.SpiralMatrixII.cpp">
       <Filter>1_Array</Filter>
     </ClCompile>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="24.SwapNodesInPairs.cpp">
-      <Filter>2_Stack</Filter>
+    <ClCompile Include="250520_区间和.cpp">
+      <Filter>1_Array</Filter>
     </ClCompile>
-    <ClCompile Include="160.IntersectionofTwoLinkedLists.cpp">
-      <Filter>2_Stack</Filter>
+    <ClCompile Include="250518_239.SlidingWindowMaximum.cpp">
+      <Filter>1_Array</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="General.h" />
+    <ClInclude Include="LinkedList.h">
+      <Filter>2_LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>1_Array</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

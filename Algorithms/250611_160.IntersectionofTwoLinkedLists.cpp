@@ -1,7 +1,7 @@
 // ¡Ì Leetcode 160 https://leetcode.cn/problems/intersection-of-two-linked-lists/description/
-// 
+//
 // ¡Ì Keywords: Intersection of Two Linked Lists, Linked List, Two Pointers
-// 
+//
 // ¡Ì Idea:
 // - Get the lengths of both linked lists.
 // - Align the starting points of both lists by skipping the extra nodes in the longer list.
@@ -21,7 +21,7 @@ private:
 		}
 	}
 public:
-	ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
+	ListNode* main(ListNode* headA, ListNode* headB) {
 		ListNode* pA = headA;
 		ListNode* pB = headB;
 		int lenA = 0, lenB = 0;

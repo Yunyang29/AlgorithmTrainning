@@ -127,13 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="160.IntersectionofTwoLinkedLists.cpp" />
-    <ClCompile Include="24.SwapNodesInPairs.cpp" />
+    <ClCompile Include="250518_239.SlidingWindowMaximum.cpp" />
+    <ClCompile Include="250616_142.LinkedListCycleII.cpp" />
+    <ClCompile Include="250611_160.IntersectionofTwoLinkedLists.cpp" />
+    <ClCompile Include="250610_24.SwapNodesInPairs.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="59.SpiralMatrixII.cpp" />
+    <ClCompile Include="250519_59.SpiralMatrixII.cpp" />
+    <ClCompile Include="250520_区间和.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array.h" />
     <ClInclude Include="General.h" />
+    <ClInclude Include="LinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

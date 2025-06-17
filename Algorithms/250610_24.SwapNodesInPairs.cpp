@@ -1,7 +1,7 @@
 // ¡Ì Leetcode 24 https://leetcode.cn/problems/spiral-matrix-ii/description/
-// 
+//
 // ¡Ì Keywords: Swap Nodes, Linked List, Pairwise Swap
-// 
+//
 // ¡Ì Idea:
 // - The most confused part is finding the right nodes while swaping.
 // - Draw a sketch and set a dummy node to simplify the process.
@@ -13,7 +13,7 @@
 class Solution
 {
 public:
-	ListNode* swapPairs(ListNode* head)
+	ListNode* main(ListNode* head)
 	{
 		ListNode* dummy = new ListNode(0);
 		dummy->next = head;
@@ -38,7 +38,7 @@ public:
 	void test()
 	{
 		ListNode* head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
-		ListNode* result = swapPairs(head);
+		ListNode* result = main(head);
 		while (result != nullptr)
 		{
 			printf("%d ", result->val);
