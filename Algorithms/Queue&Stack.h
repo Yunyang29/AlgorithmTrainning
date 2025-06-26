@@ -30,10 +30,10 @@ namespace Queue_Stack
 		bool isCatEmpty();
 	};
 
-	class ReverseStack {
+	class reverse_a_stack_using_recursion {
 	public:
-		void reverse(stack<int>& stack);
-		int getBottom(stack<int>& stack);
+		void reverse(stack<int>& s);
+		int getBottom(stack<int>& s);
 	};
 
 	class _155_min_stack
@@ -48,6 +48,19 @@ namespace Queue_Stack
 		void pop();
 		int top();
 		int getMin();
+	};
+
+	class _232_implement_queue_using_stacks
+	{
+	private:
+		stack<int> s;
+		stack<int> s_helper;
+	public:
+		_232_implement_queue_using_stacks();
+		void push(int x);
+		int pop();
+		int peek();
+		bool empty();
 	};
 
 	class LCCI0305_sort_of_stacks {

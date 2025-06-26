@@ -13,7 +13,6 @@
 #include <queue>
 #include "Queue&Stack.h"
 
-using namespace std;
 using namespace Queue_Stack;
 
 void CatAndDogQueue::add(string type)

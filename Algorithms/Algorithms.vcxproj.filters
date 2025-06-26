@@ -76,6 +76,12 @@
     <ClCompile Include="155. Min Stack.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
+    <ClCompile Include="27. Remove Elements.cpp">
+      <Filter>1. Array</Filter>
+    </ClCompile>
+    <ClCompile Include="232. Implement Queue using Stacks.cpp">
+      <Filter>5. Queue &amp; Stack</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h">

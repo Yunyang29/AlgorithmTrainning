@@ -14,24 +14,21 @@ class Solution
 public:
 	ListNode* main(ListNode* head)
 	{
-		ListNode* dummy = new ListNode(0);
-		dummy->next = head;
-		ListNode* cur = dummy;
-		while (cur->next != nullptr && cur->next->next != nullptr)
-		{
-			ListNode* a = cur->next;
-			ListNode* c = cur->next->next->next;
+		ListNode* dummyHead = new ListNode(0, head);
+		ListNode* cur = dummyHead;
+		while (cur->next != nullptr && cur->next->next != nullptr) {
+			ListNode* A = cur->next;
+			ListNode* B = cur->next->next;
 
-			cur->next = cur->next->next;
-			cur->next->next = a;
-			cur->next->next->next = c;
+			A->next = B->next;
+			cur->next = B;
+			B->next = A;
 
 			cur = cur->next->next;
 		}
-
-		ListNode* result = dummy->next;
-		delete dummy;
-		return result;
+		head = dummyHead->next;
+		delete dummyHead;
+		return head;
 	}
 
 	void test()

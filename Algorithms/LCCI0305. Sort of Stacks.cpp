@@ -8,11 +8,13 @@
 
 #include "Queue&Stack.h"
 
-Queue_Stack::LCCI0305_sort_of_stacks::LCCI0305_sort_of_stacks()
+using namespace Queue_Stack;
+
+LCCI0305_sort_of_stacks::LCCI0305_sort_of_stacks()
 {
 }
 
-void Queue_Stack::LCCI0305_sort_of_stacks::push(int val)
+void LCCI0305_sort_of_stacks::push(int val)
 {
 	// 1. 确保 s_helper 的栈顶元素 ≤ val（s_helper 是非递减的）
 	while (!s_helper.empty() && s_helper.top() > val) {
@@ -30,7 +32,7 @@ void Queue_Stack::LCCI0305_sort_of_stacks::push(int val)
 	s.push(val);
 }
 
-void Queue_Stack::LCCI0305_sort_of_stacks::pop()
+void LCCI0305_sort_of_stacks::pop()
 {
 	while (!s_helper.empty()) {
 		s.push(s_helper.top());
@@ -41,7 +43,7 @@ void Queue_Stack::LCCI0305_sort_of_stacks::pop()
 	}
 }
 
-int Queue_Stack::LCCI0305_sort_of_stacks::peek()
+int LCCI0305_sort_of_stacks::peek()
 {
 	while (!s_helper.empty()) {
 		s.push(s_helper.top());
@@ -54,7 +56,7 @@ int Queue_Stack::LCCI0305_sort_of_stacks::peek()
 	return -1;
 }
 
-bool Queue_Stack::LCCI0305_sort_of_stacks::isEmpty()
+bool LCCI0305_sort_of_stacks::isEmpty()
 {
 	return s.empty() && s_helper.empty();
 }
