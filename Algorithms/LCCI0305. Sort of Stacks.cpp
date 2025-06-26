@@ -30,7 +30,6 @@ void Queue_Stack::LCCI0305_sort_of_stacks::push(int val)
 	s.push(val);
 }
 
-
 void Queue_Stack::LCCI0305_sort_of_stacks::pop()
 {
 	while (!s_helper.empty()) {

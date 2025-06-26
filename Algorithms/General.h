@@ -1,9 +1,9 @@
 #pragma once
 
-struct LinkedNode {
+struct ListNode {
 	int val;
-	LinkedNode* next;
-	LinkedNode() : val(0), next(nullptr) {}
-	LinkedNode(int x) : val(x), next(nullptr) {}
-	LinkedNode(int x, LinkedNode* next) : val(x), next(next) {}
+	ListNode* next;
+	ListNode() : val(0), next(nullptr) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode* next) : val(x), next(next) {}
 };

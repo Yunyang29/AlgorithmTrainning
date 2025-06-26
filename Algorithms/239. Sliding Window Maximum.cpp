@@ -25,16 +25,17 @@ vector<int> Array::_239_sliding_window_maximum::main(vector<int>& nums, int k)
 	deque<int> dq;
 
 	for (int i = 0; i < nums.size(); i++) {
-		while (!dq.empty() && nums[dq.back()] < nums[i]) {
-			dq.pop_back();
-		}
-		dq.push_back(i);
-
 		while (!dq.empty() && dq.front() <= i - k) {
 			dq.pop_front();
 		}
 
-		if (i >= k - 1) { // i > k
+		while (!dq.empty() && nums[dq.back()] < nums[i]) {
+			dq.pop_back();
+		}
+
+		dq.push_back(i);
+
+		if (i >= k - 1) {
 			res.push_back(nums[dq.front()]);
 		}
 	}

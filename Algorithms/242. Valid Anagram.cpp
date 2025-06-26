@@ -17,7 +17,7 @@ bool HashTable::_242_valid_anagram::main(string s, string t)
 
 	for (int i = 0; i < t.size(); i++)
 	{
-		record[s[i] - 'a']--;
+		record[t[i] - 'a']--;
 	}
 
 	for (int i = 0; i < 26; i++)

@@ -13,42 +13,36 @@ using namespace std;
 class Solution
 {
 private:
-	void getListLength(ListNode* head, int& len) {
-		while (head) {
-			len++;
+	int getLen(ListNode* head) {
+		int res = 0;
+		while (head->next != NULL) {
+			res++;
 			head = head->next;
 		}
+		return res;
 	}
 public:
 	ListNode* main(ListNode* headA, ListNode* headB) {
-		ListNode* pA = headA;
-		ListNode* pB = headB;
-		int lenA = 0, lenB = 0;
-
-		getListLength(pA, lenA);
-		getListLength(pB, lenB);
-
-		pA = headA;
-		pB = headB;
-
-		if (lenB > lenA)
-		{
-			swap(pA, pB);
-			swap(lenA, lenB);
+		ListNode* temp_A = headA;
+		ListNode* temp_B = headB;
+		int len_A = getLen(temp_A);
+		int len_B = getLen(temp_B);
+		if (len_B > len_A) {
+			swap(len_A, len_B);
+			swap(temp_A, temp_B);
 		}
 
-		while (lenA > lenB)
-		{
-			pA = pA->next;
-			lenA--;
+		while (len_A > len_B) {
+			temp_A = temp_A->next;
+			len_A--;
 		}
 
-		while (pA != NULL)
-		{
-			if (pA == pB)
-				return pA;
-			pA = pA->next;
-			pB = pB->next;
+		while (temp_A != NULL) {
+			if (temp_A == temp_B) {
+				return temp_A;
+			}
+			temp_A = temp_A->next;
+			temp_B = temp_B->next;
 		}
 
 		return NULL;

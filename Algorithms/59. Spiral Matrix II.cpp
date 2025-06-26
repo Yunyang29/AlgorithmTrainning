@@ -15,45 +15,37 @@ public:
 	vector<vector<int>> main(int n)
 	{
 		vector<vector<int>> res(n, vector<int>(n, 0));
-		int startX, startY = 0;
 		int loop = n / 2;
-		int offset = 1;
-		int count = 1;
-		int i, j;
-
-		while (loop--)
-		{
-			i = startX;
-			j = startY;
-
-			for (j; j < n - offset; j++)
-			{
-				res[i][j] = count++;
+		int border = 1;
+		int start = 0;
+		int val = 1;
+		int x, y = start;
+		while (loop--) {
+			x = start;
+			y = start;
+			for (x; x < n - border; x++) {
+				res[y][x] = val++;
 			}
 
-			for (i; i < n - offset; i++)
-			{
-				res[i][j] = count++;
+			for (y; y < n - border; y++) {
+				res[y][x] = val++;
 			}
 
-			for (j; j > startY; j--)
-			{
-				res[i][j] = count++;
+			for (x; x > start; x--) {
+				res[y][x] = val++;
 			}
 
-			for (i; i > startX; i--)
-			{
-				res[i][j] = count++;
+			for (y; y > start; y--) {
+				res[y][x] = val++;
 			}
 
-			startX++;
-			startY++;
-			offset += 1;
+			start++;
+			border++;
 		}
 
-		if (n % 2 == 1) {
+		if (n % 2 > 0) { // count != n * n
 			int mid = n / 2;
-			res[mid][mid] = count;
+			res[mid][mid] = val;
 		}
 		return res;
 	}

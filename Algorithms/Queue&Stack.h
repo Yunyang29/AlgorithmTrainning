@@ -36,6 +36,20 @@ namespace Queue_Stack
 		int getBottom(stack<int>& stack);
 	};
 
+	class _155_min_stack
+	{
+	private:
+		stack<int> s;
+		stack<int> s_helper;
+		int curMin;
+	public:
+		_155_min_stack();
+		void push(int val);
+		void pop();
+		int top();
+		int getMin();
+	};
+
 	class LCCI0305_sort_of_stacks {
 	private:
 		stack<int> s;

@@ -9,10 +9,12 @@ using namespace std;
 
 namespace LinkedList
 {
+	class _203_remove_linked_list_elements { public: ListNode* main(ListNode* head, int val); };
+
 	class _707_design_linked_list {
 	private:
 		int _size;
-		LinkedNode* _dummyHead;
+		ListNode* _dummyHead;
 	public:
 		_707_design_linked_list();
 		int get(int index);

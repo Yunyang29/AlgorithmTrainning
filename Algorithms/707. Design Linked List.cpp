@@ -1,8 +1,14 @@
+// Date: 27/05/25
+// LeetCode: https://leetcode.com/problems/design-linked-list/
+// Keywords: Linked List, Design
+// Idea:
+// - Use a dummy head node to simplify the implementation.
+
 #include "LinkedList.h"
 
 LinkedList::_707_design_linked_list::_707_design_linked_list()
 {
-	_dummyHead = new LinkedNode(0);
+	_dummyHead = new ListNode(0);
 	_size = 0;
 }
 
@@ -12,7 +18,7 @@ int LinkedList::_707_design_linked_list::get(int index)
 		return -1;
 	}
 
-	LinkedNode* current = _dummyHead->next;
+	ListNode* current = _dummyHead->next;
 	while (index--)
 	{
 		current = current->next;
@@ -22,18 +28,18 @@ int LinkedList::_707_design_linked_list::get(int index)
 
 void LinkedList::_707_design_linked_list::addAtHead(int val)
 {
-	LinkedNode* newNode = new LinkedNode(val, _dummyHead->next);
+	ListNode* newNode = new ListNode(val, _dummyHead->next);
 	_dummyHead->next = newNode;
 	_size++;
 }
 
 void LinkedList::_707_design_linked_list::addAtTail(int val)
 {
-	LinkedNode* current = _dummyHead;
+	ListNode* current = _dummyHead;
 	while (current->next != nullptr) {
 		current = current->next;
 	}
-	current->next = new LinkedNode(val);
+	current->next = new ListNode(val);
 	_size++;
 }
 
@@ -46,12 +52,12 @@ void LinkedList::_707_design_linked_list::addAtIndex(int index, int val)
 		index = 0;
 
 	int count = 0;
-	LinkedNode* current = _dummyHead;
+	ListNode* current = _dummyHead;
 	while (index--) {
 		current = current->next;
 		count++;
 	}
-	LinkedNode* newNode = new LinkedNode(val);
+	ListNode* newNode = new ListNode(val);
 	newNode->next = current->next;
 	current->next = newNode;
 	_size++;
@@ -63,12 +69,12 @@ void LinkedList::_707_design_linked_list::deleteAtIndex(int index)
 		return;
 	}
 
-	LinkedNode* current = _dummyHead;
+	ListNode* current = _dummyHead;
 	while (index--) {
 		current = current->next;
 	}
 
-	LinkedNode* temp = current->next;
+	ListNode* temp = current->next;
 	current->next = temp->next;
 	delete temp;
 	temp = nullptr;

@@ -1,3 +1,9 @@
+// Date: 16/05/25
+// Leetcode: https://leetcode.cn/problems/squares-of-a-sorted-array/
+// Keywords: Squares of a Sorted Array, Two Pointers
+// Idea:
+// - Use two pointers, one starting from the beginning and the other from the end of the array.
+
 #include <vector>
 #include "Array.h"
 using namespace std;
