@@ -12,7 +12,7 @@ namespace LinkedList
 	class _707_design_linked_list {
 	private:
 		int _size;
-		ListNode* _dummyHead;
+		LinkedNode* _dummyHead;
 	public:
 		_707_design_linked_list();
 		int get(int index);

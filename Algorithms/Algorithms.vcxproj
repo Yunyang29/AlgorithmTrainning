@@ -127,19 +127,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.Two Sum.cpp" />
-    <ClCompile Include="142.Linked List Cycle II.cpp" />
-    <ClCompile Include="160.Intersection of Two Linked Lists.cpp" />
-    <ClCompile Include="202.Happy Number.cpp" />
-    <ClCompile Include="209.Mininum Size Subarray Sum.cpp" />
-    <ClCompile Include="239.Sliding Window Maximum.cpp" />
-    <ClCompile Include="24.Swap Nodes in Pairs.cpp" />
-    <ClCompile Include="242.Valid Anagram.cpp" />
-    <ClCompile Include="349.Intersection of Two Arrays.cpp" />
-    <ClCompile Include="454.4Sum Ⅱ.cpp" />
-    <ClCompile Include="59.Spiral Matrix II.cpp" />
-    <ClCompile Include="977.Squares of a Sorted Array.cpp" />
+    <ClCompile Include="1. Two Sum.cpp" />
+    <ClCompile Include="142. Linked List Cycle II.cpp" />
+    <ClCompile Include="160. Intersection of Two Linked Lists.cpp" />
+    <ClCompile Include="202. Happy Number.cpp" />
+    <ClCompile Include="209. Mininum Size Subarray Sum.cpp" />
+    <ClCompile Include="239. Sliding Window Maximum.cpp" />
+    <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="242. Valid Anagram.cpp" />
+    <ClCompile Include="349. Intersection of Two Arrays.cpp" />
+    <ClCompile Include="454. 4 Sum Ⅱ.cpp" />
+    <ClCompile Include="59. Spiral Matrix II.cpp" />
+    <ClCompile Include="707. Design Linked List.cpp" />
+    <ClCompile Include="977. Squares of a Sorted Array.cpp" />
+    <ClCompile Include="LCCI0305. Sort of Stacks.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ReverseStack.cpp" />
     <ClCompile Include="区间和.cpp" />
     <ClCompile Include="猫狗队列.cpp" />
   </ItemGroup>
