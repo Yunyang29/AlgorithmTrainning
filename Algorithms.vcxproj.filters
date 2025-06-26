@@ -61,7 +61,7 @@
     <ClCompile Include="977. Squares of a Sorted Array.cpp">
       <Filter>1. Array</Filter>
     </ClCompile>
-    <ClCompile Include="ReverseStack.cpp">
+    <ClCompile Include="Reverse a Stack using Recursion.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
     <ClCompile Include="LCCI0305. Sort of Stacks.cpp">
