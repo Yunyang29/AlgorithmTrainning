@@ -1,9 +1,7 @@
-// ¡Ì Date: 25/05/19
-// ¡Ì Leetcode 59 https://leetcode.cn/problems/spiral-matrix-ii/description/
-// 
-// ¡Ì Keywords: Spiral Matrix, 2D Array, Matrix Filling
-// 
-// ¡Ì Idea:
+// Date: 19/05/25
+// Leetcode: https://leetcode.cn/problems/spiral-matrix-ii/description/
+// Keywords: Spiral Matrix, 2D Array, Matrix Filling
+// Idea:
 // - Use a 2D vector to represent the matrix.
 // - Process n/2 layers of the matrix, filling in numbers in a clockwise spiral order. If n is odd, handle the center element separately in the end.
 // - Each processing requires tracking the starting position and an offset.

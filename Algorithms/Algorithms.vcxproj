@@ -127,13 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="239.SlidingWindowMaximum.cpp" />
-    <ClCompile Include="142.LinkedListCycleII.cpp" />
-    <ClCompile Include="160.IntersectionofTwoLinkedLists.cpp" />
-    <ClCompile Include="24.SwapNodesInPairs.cpp" />
+    <ClCompile Include="1.Two Sum.cpp" />
+    <ClCompile Include="142.Linked List Cycle II.cpp" />
+    <ClCompile Include="160.Intersection of Two Linked Lists.cpp" />
+    <ClCompile Include="202.Happy Number.cpp" />
+    <ClCompile Include="209.Mininum Size Subarray Sum.cpp" />
+    <ClCompile Include="239.Sliding Window Maximum.cpp" />
+    <ClCompile Include="24.Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="242.Valid Anagram.cpp" />
+    <ClCompile Include="349.Intersection of Two Arrays.cpp" />
+    <ClCompile Include="454.4Sum Ⅱ.cpp" />
+    <ClCompile Include="59.Spiral Matrix II.cpp" />
+    <ClCompile Include="977.Squares of a Sorted Array.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="59.SpiralMatrixII.cpp" />
-    <ClCompile Include="ReverseStack.cpp" />
     <ClCompile Include="区间和.cpp" />
     <ClCompile Include="猫狗队列.cpp" />
   </ItemGroup>
@@ -143,9 +149,6 @@
     <ClInclude Include="HashTable.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Queue&amp;Stack.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="242.ValidAnagram.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

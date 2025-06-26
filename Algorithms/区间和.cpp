@@ -1,16 +1,12 @@
-// ¡Ì Date: 25/05/20
-// ¡Ì https://www.programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html#%E6%80%9D%E8%B7%AF
-//
-// ¡Ì Keywords: Prefix Sum, Range Sum Query, Array
-// 
-// ¡Ì Idea:
+// Date: 20/05/25
+// https://www.programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html#%E6%80%9D%E8%B7%AF
+// Keywords: Prefix Sum, Range Sum Query, Array
+// Idea:
 // - Use a prefix sum array to efficiently calculate the sum of elements in a given range.
-
 
 #include <iostream>
 #include <vector>
 using namespace std;
-
 
 class Solution
 {

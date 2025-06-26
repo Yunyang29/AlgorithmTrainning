@@ -1,9 +1,7 @@
-// ¡Ì Date: 25/06/11
-// ¡Ì Leetcode 160 https://leetcode.cn/problems/intersection-of-two-linked-lists/description/
-//
-// ¡Ì Keywords: Intersection of Two Linked Lists, Linked List, Two Pointers
-//
-// ¡Ì Idea:
+// Date: 11/06/25
+// Leetcode: https://leetcode.cn/problems/intersection-of-two-linked-lists/description/
+// Keywords: Intersection of Two Linked Lists, Linked List, Two Pointers
+// Idea:
 // - Get the lengths of both linked lists.
 // - Align the starting points of both lists by skipping the extra nodes in the longer list.
 // - Traverse both lists simultaneously until the intersection node is found or the end is reached.

@@ -1,9 +1,7 @@
-// ¡Ì 25/06/16
-// ¡Ì Leetcode 142 https://leetcode.cn/problems/linked-list-cycle-ii/description/
-//
-// ¡Ì Keywords: Linked List Cycle, Cycle Detection, Floyd's Tortoise and Hare Algorithm
-//
-// ¡Ì Idea:	
+// Date: 16/06/25
+// Leetcode: https://leetcode.cn/problems/linked-list-cycle-ii/description/
+// Keywords: Linked List Cycle, Cycle Detection, Floyd's Tortoise and Hare Algorithm
+// Idea:
 // - A fast pointer and a slow pointer are used to detect the cycle.
 // - If they meet, it indicates a cycle.
 // - To find the start of the cycle, a new pointer is set to the head and moved in tandem with the slow pointer until they meet again.

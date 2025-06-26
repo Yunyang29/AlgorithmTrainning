@@ -35,4 +35,16 @@ namespace Queue_Stack
 		void reverse(stack<int>& stack);
 		int getBottom(stack<int>& stack);
 	};
+
+	class LCCI0305_sort_of_stacks {
+	private:
+		stack<int> s;
+		stack<int> s_helper;
+	public:
+		LCCI0305_sort_of_stacks();
+		void push(int val);
+		void pop();
+		int peek();
+		bool isEmpty();
+	};
 }

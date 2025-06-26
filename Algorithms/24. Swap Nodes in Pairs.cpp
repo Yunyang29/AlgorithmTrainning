@@ -1,9 +1,7 @@
-// ¡Ì Date: 25/06/10
-// ¡Ì Leetcode 24 https://leetcode.cn/problems/spiral-matrix-ii/description/
-//
-// ¡Ì Keywords: Swap Nodes, Linked List, Pairwise Swap
-//
-// ¡Ì Idea:
+// Date: 10/06/25
+// Leetcode: https://leetcode.cn/problems/spiral-matrix-ii/description/
+// Keywords: Swap Nodes, Linked List, Pairwise Swap
+// Idea:
 // - The most confused part is finding the right nodes while swaping.
 // - Draw a sketch and set a dummy node to simplify the process.
 // - Iterate through the list, swapping pairs of nodes until the end is reached.
