@@ -4,10 +4,13 @@
 // Idea:
 // - Use an unordered_map to store the sums of pairs from the first two arrays.
 // - For each pair from the last two arrays, check if the negative sum exists in the map and count occurrences.
+// Complexity:
+// - Time: O(n^2), where n is the length of each array.
+// - Space: O(n^2) for storing sums in the map.
 
 
 #include "HashTable.h"
-int HashTable::_454_4_sum_Ⅱ::main(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4)
+int HashTable::_454_4_sum_ii::main(vector<int>& nums1, vector<int>& nums2, vector<int>& nums3, vector<int>& nums4)
 {
 	unordered_map<int, int> umap; // 因为只需要统计和出现的次数，所以用unordered_map来存储和及其出现次数
 

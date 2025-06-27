@@ -1,46 +1,52 @@
 // Date: 20/05/25
-// https://www.programmercarl.com/kamacoder/0058.%E5%8C%BA%E9%97%B4%E5%92%8C.html#%E6%80%9D%E8%B7%AF
+// Leetcode: https://leetcode.cn/problems/range-sum-query-immutable/description/
 // Keywords: Prefix Sum, Range Sum Query, Array
 // Idea:
 // - Use a prefix sum array to efficiently calculate the sum of elements in a given range.
 
+#include "Array.h"
 #include <iostream>
 #include <vector>
 using namespace std;
+using namespace Array;
 
-class Solution
+_303_range_sum_query_immutable::_303_range_sum_query_immutable(vector<int>& nums) {
+	int n = nums.size();
+	sums.resize(n + 1);
+	for (int i = 0; i < n; i++) {
+		sums[i + 1] = sums[i] + nums[i];
+	}
+}
+
+int _303_range_sum_query_immutable::sumRange(int left, int right) {
+	return sums[right + 1] - sums[left];
+}
+
+void _303_range_sum_query_immutable::solution_2()
 {
-public:
-	int main()
+	int n;
+	cin >> n;
+
+	int sum = 0;
+	vector<int> nums(n, 0);
+	vector<int> sums(n, 0);
+	for (int i = 0; i < n; i++)
 	{
-		int n;
-		cin >> n;
+		int val;
+		cin >> val;
+		nums[i] = val;
 
-		vector<int> nums(n, 0);
-		vector<int> sums(n, 0);
-		int presum = 0;
-		for (int i = 0; i < n; i++)
-		{
-			cin >> nums[i];
-			presum += nums[i];
-			sums[i] = presum;
-		}
-
-		int a, b = 0;
-
-		while (cin >> a >> b) {
-			if (a == 0)
-				return sums[b];
-			else
-				return sums[b] - sums[a - 1];
-		}
+		sum += val;
+		sums[i] = sum;
 	}
 
-	void test()
-	{
-		int result = main();
-		cout << result << endl;
-		// Example input: 5 1 2 3 4 5 1 3
-		// Expected output: 6 (sum of elements from index 1 to 3)
+
+	int a, b = 0;
+
+	while (cin >> a >> b) {
+		if (a == 0)
+			cout << sums[b];
+		else
+			cout << sums[b] - sums[a - 1];
 	}
-};
+}

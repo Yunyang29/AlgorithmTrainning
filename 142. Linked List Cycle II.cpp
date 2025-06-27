@@ -8,29 +8,37 @@
 // - This point is the start of the cycle.
 
 #include "General.h"
+#include "Linkedlist.h"
 
-class Solution
+using namespace LinkedList;
+
+ListNode* _142_linked_list_cycle_ii::main(ListNode* head)
 {
-public:
-	ListNode* main(ListNode* head) {
-		ListNode* slow = head;
-		ListNode* fast = head;
-		while (fast != nullptr && fast->next != nullptr)
-		{
-			slow = slow->next;
-			fast = fast->next->next;
-			if (slow == fast)
-			{
-				ListNode* index1 = fast;
-				ListNode* index2 = head;
-				while (index1 != index2)
-				{
-					index1 = index1->next;
-					index2 = index2->next;
-				}
-				return index2;
-			}
-		}
-		return nullptr;
+	ListNode* slow = head;
+	ListNode* fast = head;
+
+	while (fast != NULL && fast->next != NULL)
+	{
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast)
+			break;
 	}
-};
+
+	if (fast == NULL || fast->next == NULL)
+	{
+		return NULL; // No cycle detected
+	}
+
+	ListNode* node_1 = fast;
+	ListNode* node_2 = head;
+
+
+	while (node_1 != node_2)
+	{
+		node_1 = node_1->next;
+		node_2 = node_2->next;
+	}
+
+	return node_1;
+}

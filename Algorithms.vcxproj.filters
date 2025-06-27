@@ -7,14 +7,14 @@
     <Filter Include="5. Queue &amp; Stack">
       <UniqueIdentifier>{5ebf9ce5-d511-4099-891b-d0e50ea3cbb0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="3. Hash Table">
-      <UniqueIdentifier>{16f19895-777f-4e85-b1ee-48b4c13567c7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2. Linked List">
-      <UniqueIdentifier>{71b6b4ec-56f5-410f-b721-b5761e66a96c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Head">
       <UniqueIdentifier>{57fa6083-6e31-4323-970c-8010f3bc6b7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. LinkedList">
+      <UniqueIdentifier>{71b6b4ec-56f5-410f-b721-b5761e66a96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. HashTable">
+      <UniqueIdentifier>{16f19895-777f-4e85-b1ee-48b4c13567c7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -26,22 +26,19 @@
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
     <ClCompile Include="1. Two Sum.cpp">
-      <Filter>3. Hash Table</Filter>
+      <Filter>3. HashTable</Filter>
     </ClCompile>
     <ClCompile Include="454. 4 Sum Ⅱ.cpp">
-      <Filter>3. Hash Table</Filter>
+      <Filter>3. HashTable</Filter>
     </ClCompile>
     <ClCompile Include="202. Happy Number.cpp">
-      <Filter>3. Hash Table</Filter>
+      <Filter>3. HashTable</Filter>
     </ClCompile>
     <ClCompile Include="242. Valid Anagram.cpp">
-      <Filter>3. Hash Table</Filter>
+      <Filter>3. HashTable</Filter>
     </ClCompile>
     <ClCompile Include="24. Swap Nodes in Pairs.cpp">
-      <Filter>2. Linked List</Filter>
-    </ClCompile>
-    <ClCompile Include="349. Intersection of Two Arrays.cpp">
-      <Filter>1. Array</Filter>
+      <Filter>2. LinkedList</Filter>
     </ClCompile>
     <ClCompile Include="239. Sliding Window Maximum.cpp">
       <Filter>1. Array</Filter>
@@ -50,10 +47,10 @@
       <Filter>1. Array</Filter>
     </ClCompile>
     <ClCompile Include="142. Linked List Cycle II.cpp">
-      <Filter>2. Linked List</Filter>
+      <Filter>2. LinkedList</Filter>
     </ClCompile>
     <ClCompile Include="160. Intersection of Two Linked Lists.cpp">
-      <Filter>2. Linked List</Filter>
+      <Filter>2. LinkedList</Filter>
     </ClCompile>
     <ClCompile Include="209. Mininum Size Subarray Sum.cpp">
       <Filter>1. Array</Filter>
@@ -64,14 +61,14 @@
     <ClCompile Include="Reverse a Stack using Recursion.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
-    <ClCompile Include="LCCI0305. Sort of Stacks.cpp">
+    <ClCompile Include="LCCI.03.05. Sort of Stacks.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
     <ClCompile Include="707. Design Linked List.cpp">
-      <Filter>2. Linked List</Filter>
+      <Filter>2. LinkedList</Filter>
     </ClCompile>
     <ClCompile Include="203. Remove Linked List Elements.cpp">
-      <Filter>2. Linked List</Filter>
+      <Filter>2. LinkedList</Filter>
     </ClCompile>
     <ClCompile Include="155. Min Stack.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
@@ -81,6 +78,15 @@
     </ClCompile>
     <ClCompile Include="232. Implement Queue using Stacks.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="开发商购买土地.cpp">
+      <Filter>1. Array</Filter>
+    </ClCompile>
+    <ClCompile Include="704. Binary Search.cpp">
+      <Filter>1. Array</Filter>
+    </ClCompile>
+    <ClCompile Include="349. Intersection of Two Arrays.cpp">
+      <Filter>3. HashTable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

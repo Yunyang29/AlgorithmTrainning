@@ -2,8 +2,12 @@
 // Leetcode: https://leetcode.cn/problems/intersection-of-two-arrays/
 // Keywords: Intersection of Two Arrays, Hash Table, Set
 // Idea:
-// - Use a hash set to store the elements of the first array.
-// - Iterate through the second array and check if each element exists in the hash set.
+// - Use an unordered_set to store elements of the first array by time complexity O(n).
+// - To do so, when iterate through the second array, the total time complexity is O(n + m), where n and m are the sizes of the two arrays.
+// - Finally, convert the set to a vector and return it by time complexity O(k).
+// Complexity:
+// - Time: O(n + m + k) -> O(n + m)
+// - Space: O(n), where n is the size of nums1.
 
 #include "HashTable.h"
 #include <unordered_set>

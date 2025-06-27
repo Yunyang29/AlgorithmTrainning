@@ -1,15 +1,23 @@
 #pragma once
 
-#include <vector>
+#include "General.h"
 #include <string>
 #include <unordered_map>
-#include "General.h"
+#include <vector>
 
 using namespace std;
 
 namespace LinkedList
 {
-	class _203_remove_linked_list_elements { public: ListNode* main(ListNode* head, int val); };
+	class _142_linked_list_cycle_ii {
+	public:
+		ListNode* main(ListNode* head);
+	};
+
+	class _203_remove_linked_list_elements {
+	public:
+		ListNode* main(ListNode* head, int val);
+	};
 
 	class _707_design_linked_list {
 	private:
@@ -24,4 +32,3 @@ namespace LinkedList
 		void deleteAtIndex(int index);
 	};
 }
-#pragma once
