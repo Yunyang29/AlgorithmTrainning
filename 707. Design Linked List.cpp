@@ -51,11 +51,9 @@ void LinkedList::_707_design_linked_list::addAtIndex(int index, int val)
 	if (index < 0)
 		index = 0;
 
-	int count = 0;
 	ListNode* current = _dummyHead;
 	while (index--) {
 		current = current->next;
-		count++;
 	}
 	ListNode* newNode = new ListNode(val);
 	newNode->next = current->next;
