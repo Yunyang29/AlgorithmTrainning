@@ -14,48 +14,56 @@ LinkedList::_707_design_linked_list::_707_design_linked_list()
 
 int LinkedList::_707_design_linked_list::get(int index)
 {
-	if (index >= _size || index < 0) {
+	if (index < 0 || index >= _size)
+	{
 		return -1;
 	}
 
-	ListNode* current = _dummyHead->next;
+	ListNode *current = _dummyHead->next;
 	while (index--)
 	{
 		current = current->next;
 	}
+
 	return current->val;
 }
 
 void LinkedList::_707_design_linked_list::addAtHead(int val)
 {
-	ListNode* newNode = new ListNode(val, _dummyHead->next);
+	ListNode *newNode = new ListNode(val, _dummyHead->next);
 	_dummyHead->next = newNode;
 	_size++;
 }
 
 void LinkedList::_707_design_linked_list::addAtTail(int val)
 {
-	ListNode* current = _dummyHead;
-	while (current->next != nullptr) {
+	ListNode *newNode = new ListNode(val);
+	ListNode *current = _dummyHead;
+
+	while (current->next != nullptr)
+	{
 		current = current->next;
 	}
-	current->next = new ListNode(val);
+
+	current->next = newNode;
 	_size++;
 }
 
 void LinkedList::_707_design_linked_list::addAtIndex(int index, int val)
 {
-	if (index > _size)
+	if (index < 0 || index > _size)
+	{
 		return;
+	}
 
-	if (index < 0)
-		index = 0;
+	ListNode *newNode = new ListNode(val);
+	ListNode *current = _dummyHead;
 
-	ListNode* current = _dummyHead;
-	while (index--) {
+	while (index--)
+	{
 		current = current->next;
 	}
-	ListNode* newNode = new ListNode(val);
+
 	newNode->next = current->next;
 	current->next = newNode;
 	_size++;
@@ -63,18 +71,20 @@ void LinkedList::_707_design_linked_list::addAtIndex(int index, int val)
 
 void LinkedList::_707_design_linked_list::deleteAtIndex(int index)
 {
-	if (index >= _size || index < 0) {
+	if (index < 0 || index >= _size)
+	{
 		return;
 	}
 
-	ListNode* current = _dummyHead;
-	while (index--) {
+	ListNode *current = _dummyHead;
+
+	while (index--)
+	{
 		current = current->next;
 	}
 
-	ListNode* temp = current->next;
-	current->next = temp->next;
-	delete temp;
-	temp = nullptr;
+	ListNode *toDelete = current->next;
+	current->next = toDelete->next;
+	delete toDelete;
 	_size--;
 }
