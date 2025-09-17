@@ -12,7 +12,7 @@ int Array::_27_remove_element::main(vector<int>& nums, int val)
 	int slow = 0;
 	for (int i = 0; i < nums.size(); i++)
 	{
-		if (nums[slow] != val)
+		if (nums[i] != val)
 		{
 			nums[slow++] = nums[i];
 		}
