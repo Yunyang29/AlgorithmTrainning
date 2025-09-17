@@ -15,39 +15,36 @@ public:
 	vector<vector<int>> main(int n)
 	{
 		vector<vector<int>> res(n, vector<int>(n, 0));
-		int loop = n / 2;
-		int border = 1;
-		int start = 0;
-		int val = 1;
-		int x, y = start;
-		while (loop--) {
-			x = start;
-			y = start;
-			for (x; x < n - border; x++) {
-				res[y][x] = val++;
-			}
+        int loop = n / 2;
+        int starter = 0;
+        int count = 1;
+        while (loop--) {
+            int row = starter;
+            int col = starter;
+            for (col; col < n - starter - 1; col++) {
+                res[row][col] = count++;
+            }
 
-			for (y; y < n - border; y++) {
-				res[y][x] = val++;
-			}
+            for (row; row < n - starter - 1; row++) {
+                res[row][col] = count++;
+            }
 
-			for (x; x > start; x--) {
-				res[y][x] = val++;
-			}
+            for (col; col > starter; col--) {
+                res[row][col] = count++;
+            }
 
-			for (y; y > start; y--) {
-				res[y][x] = val++;
-			}
+            for (row; row > starter; row--) {
+                res[row][col] = count++;
+            }
 
-			start++;
-			border++;
-		}
+            starter++;
+        }
 
-		if (n % 2 > 0) { // count != n * n
-			int mid = n / 2;
-			res[mid][mid] = val;
-		}
-		return res;
+        if (n % 2 != 0) {
+            int mid = n / 2;
+            res[mid][mid] = n * n;
+        }
+        return res;
 	}
 
 	void test()
