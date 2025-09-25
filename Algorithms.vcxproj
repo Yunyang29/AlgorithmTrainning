@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -147,6 +147,7 @@
     <ClCompile Include="977. Squares of a Sorted Array.cpp" />
     <ClCompile Include="LCCI.03.05. Sort of Stacks.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Replace Number.cpp" />
     <ClCompile Include="Reverse a Stack using Recursion.cpp" />
     <ClCompile Include="区间和.cpp" />
     <ClCompile Include="开发商购买土地.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="HashTable.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Queue&amp;Stack.h" />
+    <ClInclude Include="String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
