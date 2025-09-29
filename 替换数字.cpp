@@ -4,7 +4,7 @@
 using namespace std;
 using namespace String;
 
-void _replace_number::main()
+void replaceNumber::main()
 {
 	string s;
 	while (cin >> s)

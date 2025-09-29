@@ -16,6 +16,9 @@
     <Filter Include="3. HashTable">
       <UniqueIdentifier>{16f19895-777f-4e85-b1ee-48b4c13567c7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="4. String">
+      <UniqueIdentifier>{289f41d6-b095-470b-93ca-a96eba366b33}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
@@ -88,6 +91,12 @@
     <ClCompile Include="349. Intersection of Two Arrays.cpp">
       <Filter>3. HashTable</Filter>
     </ClCompile>
+    <ClCompile Include="替换数字.cpp">
+      <Filter>4. String</Filter>
+    </ClCompile>
+    <ClCompile Include="右旋字符串.cpp">
+      <Filter>4. String</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h">
@@ -103,6 +112,9 @@
       <Filter>Head</Filter>
     </ClInclude>
     <ClInclude Include="Queue&amp;Stack.h">
+      <Filter>Head</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
       <Filter>Head</Filter>
     </ClInclude>
   </ItemGroup>
