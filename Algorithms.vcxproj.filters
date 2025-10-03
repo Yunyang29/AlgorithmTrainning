@@ -79,7 +79,7 @@
     <ClCompile Include="27. Remove Elements.cpp">
       <Filter>1. Array</Filter>
     </ClCompile>
-    <ClCompile Include="232. Implement Queue using Stacks.cpp">
+    <ClCompile Include="232. Implement Queue Using Stacks.cpp">
       <Filter>5. Queue &amp; Stack</Filter>
     </ClCompile>
     <ClCompile Include="开发商购买土地.cpp">
@@ -95,6 +95,18 @@
       <Filter>4. String</Filter>
     </ClCompile>
     <ClCompile Include="右旋字符串.cpp">
+      <Filter>4. String</Filter>
+    </ClCompile>
+    <ClCompile Include="383. Ransom Note.cpp">
+      <Filter>3. HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="15. 3Sum.cpp">
+      <Filter>3. HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="225. Implement Stack Using Queues.cpp">
+      <Filter>5. Queue &amp; Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="541. Reverse String II.cpp">
       <Filter>4. String</Filter>
     </ClCompile>
   </ItemGroup>

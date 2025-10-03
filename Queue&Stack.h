@@ -24,6 +24,18 @@ namespace Queue_Stack
 		int getMin();
 	};
 
+	class _225_implement_stack_using_queues
+	{
+	private:
+		queue<int> q;
+	public:
+		_225_implement_stack_using_queues();
+		void push(int x);
+		int pop();
+		int top();
+		bool empty();
+	};
+
 	class _232_implement_queue_using_stacks
 	{
 	private:

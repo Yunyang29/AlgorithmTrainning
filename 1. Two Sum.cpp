@@ -15,15 +15,15 @@
 
 vector<int> HashTable::_1_two_sum::main(vector<int>& nums, int target)
 {
-	unordered_map<int, int> map; // 存储数字和其索引
-	for (int i = 0; i < nums.size(); i++)
-	{
-		unordered_map<int, int>::iterator iter = map.find(target - nums[i]);
-		if (iter != map.end())
-		{
-			return vector<int>{iter->second, i};
+	vector<int> res;
+	unordered_map<int, int> record;
+	for (int i = 0; i < nums.size(); i++) {
+		if (record.find(target - nums[i]) != record.end()) {
+			res.push_back(i);
+			res.push_back(record[target - nums[i]]);
+			break;
 		}
-		map.insert(pair<int, int>(nums[i], i));
+		record[nums[i]] = i;
 	}
-	return {};
+	return res;
 }

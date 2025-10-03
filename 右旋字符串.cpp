@@ -1,3 +1,6 @@
+// Date: 25/09/25
+// Link: https://kamacoder.com/problempage.php?pid=1065
+
 #include "String.h"
 #include <iostream>
 

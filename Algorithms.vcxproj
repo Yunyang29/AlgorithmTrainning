@@ -129,18 +129,22 @@
   <ItemGroup>
     <ClCompile Include="1. Two Sum.cpp" />
     <ClCompile Include="142. Linked List Cycle II.cpp" />
+    <ClCompile Include="15. 3Sum.cpp" />
     <ClCompile Include="155. Min Stack.cpp" />
     <ClCompile Include="160. Intersection of Two Linked Lists.cpp" />
     <ClCompile Include="202. Happy Number.cpp" />
     <ClCompile Include="203. Remove Linked List Elements.cpp" />
     <ClCompile Include="209. Mininum Size Subarray Sum.cpp" />
-    <ClCompile Include="232. Implement Queue using Stacks.cpp" />
+    <ClCompile Include="225. Implement Stack Using Queues.cpp" />
+    <ClCompile Include="232. Implement Queue Using Stacks.cpp" />
     <ClCompile Include="239. Sliding Window Maximum.cpp" />
     <ClCompile Include="24. Swap Nodes in Pairs.cpp" />
     <ClCompile Include="242. Valid Anagram.cpp" />
     <ClCompile Include="27. Remove Elements.cpp" />
     <ClCompile Include="349. Intersection of Two Arrays.cpp" />
+    <ClCompile Include="383. Ransom Note.cpp" />
     <ClCompile Include="454. 4 Sum Ⅱ.cpp" />
+    <ClCompile Include="541. Reverse String II.cpp" />
     <ClCompile Include="59. Spiral Matrix II.cpp" />
     <ClCompile Include="704. Binary Search.cpp" />
     <ClCompile Include="707. Design Linked List.cpp" />

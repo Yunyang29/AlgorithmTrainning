@@ -1,3 +1,6 @@
+// Date: 24/09/25
+// Link: https://kamacoder.com/problempage.php?pid=1064
+
 #include "String.h"
 #include <iostream>
 
@@ -13,7 +16,7 @@ void replaceNumber::main()
 		int numberCount = 0;
 		for (int i = 0; i < s.size(); i++)
 		{
-			if (s[i] >= '0' && s[i] <= '0')
+			if (s[i] >= '0' && s[i] <= '9')
 			{
 				numberCount++;
 			}
@@ -25,7 +28,7 @@ void replaceNumber::main()
 
 		while (oldEndPtr >= 0)
 		{
-			if (s[oldEndPtr] >= '0' && s[oldEndPtr] <= '0')
+			if (s[oldEndPtr] >= '0' && s[oldEndPtr] <= '9')
 			{
 				s[newEndPtr--] = 'r';
 				s[newEndPtr--] = 'e';

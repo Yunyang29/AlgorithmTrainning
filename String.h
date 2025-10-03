@@ -1,6 +1,12 @@
 #pragma once
 namespace String
 {
+	class _541_reverse_string_ii
+	{
+	public:
+		string main(string s, int k);
+	};
+
 	class replaceNumber
 	{
 	public:
