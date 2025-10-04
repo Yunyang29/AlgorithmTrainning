@@ -18,6 +18,49 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Array.h" />
+    <ClInclude Include="Header\General.h" />
+    <ClInclude Include="Header\Hashtable.h" />
+    <ClInclude Include="Header\LinkedList.h" />
+    <ClInclude Include="Header\Queue&amp;Stack.h" />
+    <ClInclude Include="Header\String.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1. Array\15. 3Sum.cpp" />
+    <ClCompile Include="1. Array\18. 4Sum.cpp" />
+    <ClCompile Include="1. Array\209. Mininum Size Subarray Sum.cpp" />
+    <ClCompile Include="1. Array\239. Sliding Window Maximum.cpp" />
+    <ClCompile Include="1. Array\27. Remove Elements.cpp" />
+    <ClCompile Include="1. Array\59. Spiral Matrix II.cpp" />
+    <ClCompile Include="1. Array\704. Binary Search.cpp" />
+    <ClCompile Include="1. Array\977. Squares of a Sorted Array.cpp" />
+    <ClCompile Include="1. Array\区间和.cpp" />
+    <ClCompile Include="1. Array\开发商购买土地.cpp" />
+    <ClCompile Include="2. ListedNode\142. Linked List Cycle II.cpp" />
+    <ClCompile Include="2. ListedNode\160. Intersection of Two Linked Lists.cpp" />
+    <ClCompile Include="2. ListedNode\203. Remove Linked List Elements.cpp" />
+    <ClCompile Include="2. ListedNode\24. Swap Nodes in Pairs.cpp" />
+    <ClCompile Include="2. ListedNode\707. Design Linked List.cpp" />
+    <ClCompile Include="3. Hashtable\1. Two Sum.cpp" />
+    <ClCompile Include="3. Hashtable\155. Min Stack.cpp" />
+    <ClCompile Include="3. Hashtable\202. Happy Number.cpp" />
+    <ClCompile Include="3. Hashtable\232. Implement Queue Using Stacks.cpp" />
+    <ClCompile Include="3. Hashtable\242. Valid Anagram.cpp" />
+    <ClCompile Include="3. Hashtable\349. Intersection of Two Arrays.cpp" />
+    <ClCompile Include="3. Hashtable\383. Ransom Note.cpp" />
+    <ClCompile Include="3. Hashtable\454. 4Sum Ⅱ.cpp" />
+    <ClCompile Include="3. Hashtable\猫狗队列.cpp" />
+    <ClCompile Include="4. Queue &amp; Stack\225. Implement Stack Using Queues.cpp" />
+    <ClCompile Include="4. Queue &amp; Stack\LCCI.03.05. Sort of Stacks.cpp" />
+    <ClCompile Include="4. Queue &amp; Stack\Reverse a Stack using Recursion.cpp" />
+    <ClCompile Include="5. String\151. Reverse Word in a String.cpp" />
+    <ClCompile Include="5. String\344 Reverse String.cpp" />
+    <ClCompile Include="5. String\541. Reverse String II.cpp" />
+    <ClCompile Include="5. String\右旋字符串.cpp" />
+    <ClCompile Include="5. String\替换数字.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -122,49 +165,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Algorithm.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\15. 3Sum.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\18. 4Sum.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\209. Mininum Size Subarray Sum.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\239. Sliding Window Maximum.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\27. Remove Elements.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\59. Spiral Matrix II.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\704. Binary Search.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\977. Squares of a Sorted Array.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\区间和.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\1. Array\开发商购买土地.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\2. Listnode\142. Linked List Cycle II.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\2. Listnode\160. Intersection of Two Linked Lists.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\2. Listnode\203. Remove Linked List Elements.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\2. Listnode\24. Swap Nodes in Pairs.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\2. Listnode\707. Design Linked List.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\1. Two Sum.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\155. Min Stack.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\202. Happy Number.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\232. Implement Queue Using Stacks.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\242. Valid Anagram.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\349. Intersection of Two Arrays.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\383. Ransom Note.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\454. 4Sum Ⅱ.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\3. Hashtable\猫狗队列.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\4. Queue &amp; Stack\225. Implement Stack Using Queues.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\4. Queue &amp; Stack\LCCI.03.05. Sort of Stacks.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\4. Queue &amp; Stack\Reverse a Stack using Recursion.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\5. String\151. Reverse Word in a String.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\5. String\344 Reverse String.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\5. String\541. Reverse String II.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\5. String\右旋字符串.cpp" />
-    <ClCompile Include="C:\Users\Administrator\Desktop\New folder\5. String\替换数字.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\Array.h" />
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\General.h" />
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\Hashtable.h" />
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\LinkedList.h" />
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\Queue&amp;Stack.h" />
-    <ClInclude Include="C:\Users\Administrator\Desktop\New folder\Header\String.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
