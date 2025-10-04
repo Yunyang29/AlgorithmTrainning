@@ -1,11 +1,20 @@
 #pragma once
-
 #include <vector>
 
 using namespace std;
 
 namespace Array
 {
+	class _15_3sum {
+	public:
+		vector<vector<int>> main(vector<int>& nums);
+	};
+
+	class _18_4sum {
+	public:
+		vector<vector<int>> main(vector<int>& nums, int target);
+	};
+
 	class _27_remove_element {
 	public:
 		int main(vector<int>& nums, int val);
